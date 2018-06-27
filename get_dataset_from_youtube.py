@@ -13,8 +13,8 @@ eval_segments = project_path+'/segments/subset_eval_segments.csv'
 data_path = project_path+'/data/'
 
 
+# idea from : https://github.com/lccambiaghi/02456-Project---Background-Audio-Classification
 # specify the index of files that is downloaded last time (to resume downloading)
-# Basically this is a simple work around for this downloader, where I sometimes accidentally close the program or sometimes it just hangs in my environment
 last_processed_row = 0
 
 def youtube_downloader(data_path ,subfolder, id, start_time, idx):
